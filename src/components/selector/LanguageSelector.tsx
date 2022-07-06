@@ -18,13 +18,17 @@ export const LanguageSelector: FC<Props> = ({ defaultLang, onLanguageSelected, .
 
   const langSelectorOptions: LanguageSelectorOption[] = [
     {
-      value: 'es',
-      label: <Image src="/icons/es.svg" alt={'es'} height={flagHeight} width={flagWidth} />,
-    },
-    {
       value: 'en',
       label: <Image src="/icons/gb.svg" alt={'en'} height={flagHeight} width={flagWidth} />,
     },
+    {
+      value: 'es',
+      label: <Image src="/icons/es.svg" alt={'es'} height={flagHeight} width={flagWidth} />,
+    },
+    // {
+    //   value: 'de',
+    //   label: <Image src="/icons/de.svg" alt={'de'} height={flagHeight} width={flagWidth} />,
+    // },
   ]
 
   const defaultOption = langSelectorOptions.find((opt) => opt.value === defaultLang)

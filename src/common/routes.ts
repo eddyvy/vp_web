@@ -8,6 +8,8 @@ import { PrivacyPolicy } from '../pages/PrivacyPolicy'
 
 export type CommonRoutes =
   | 'HOME'
+  | 'SERVICES'
+  | 'LOCATIONS'
   | 'ABOUT'
   | 'CONTACT'
   | 'COOKIES'
@@ -16,9 +18,21 @@ export type CommonRoutes =
 
 export const allRoutes: AppRoutes = {
   HOME: { Component: Home, path: {
-    es: '/',
-    en: '/home',
+    es: '/inicio',
+    en: '/',
   } },
+  SERVICES: {
+    Component: Home, path: {
+      es: '/servicios',
+      en: '/services',
+    },
+  },
+  LOCATIONS: {
+    Component: Home, path: {
+      es: '/lugares',
+      en: '/locations',
+    },
+  },
   ABOUT: { Component: AboutUs, path: {
     es: '/sobre-nosotros',
     en: '/about',

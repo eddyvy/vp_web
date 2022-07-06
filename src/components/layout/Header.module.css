@@ -1,0 +1,17 @@
+.headerToolbar {
+  display: 'flex';
+  justify-content: 'space-between';
+  padding: 0;
+  width: 100vw;
+}
+
+.headerImageContainer {
+  position: relative;
+  width: 12rem;
+  height: 7rem;
+}
+
+.headerLangSelector {
+  display: block;
+  padding-right: 2rem;
+}
