@@ -1,9 +1,9 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import { Toolbar } from '@mui/material'
+import { Button, Toolbar } from '@mui/material'
 import { useRouter } from 'next/router'
 import { PageProps } from '../../common/types'
 import { allRoutes } from '../../common/routes'
@@ -15,14 +15,20 @@ import styles from './Header.module.css'
 export const Header: FC<PageProps> = ({ lang, route }) => {
   const router = useRouter()
 
+  const [ showNavbar, setShowNavbar ] = useState<boolean>(false)
+
   const handleSelectLang = (lang: Language) => {
     const nextRt = allRoutes[route].path[lang]
     router.push(nextRt)
   }
 
+  const toggleNavbar = () => {
+    setShowNavbar((prev) => !prev)
+  }
+
   return (
     <header>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} className={styles.headerDesktop}>
         <AppBar
           position="static"
           color="transparent"
@@ -33,7 +39,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
             <div className={styles.headerImageContainer}>
               <Link href={allRoutes.HOME.path[lang]}>
                 <a>
-                  <Image src="/icons/VP_Logo_pequeno.png" alt="V&P Logo" layout='fill' />
+                  <Image src="/logo/VP_Logo_pequeno.png" alt="V&P Logo" layout="fill" />
                 </a>
               </Link>
             </div>
@@ -47,6 +53,25 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
           </Toolbar>
         </AppBar>
       </Box>
+      <div className={styles.headerMobile}>
+        <Button
+          className={styles.headerImageContainerMobile}
+          onClick={toggleNavbar}
+        >
+          <Image
+            src="/logo/VP_Logo_mediano_circulo.svg"
+            alt="V&P Logo"
+            layout="fill"
+          />
+        </Button>
+        <div className={styles.headerLangSelectorMobile}>
+          <LanguageSelector
+            defaultLang={lang}
+            onLanguageSelected={handleSelectLang}
+          />
+        </div>
+        { showNavbar && <Navbar lang={lang} route={route} /> }
+      </div>
     </header>
   )
 }

@@ -1,17 +1,51 @@
+.headerDesktop {
+  display: none;
+}
+
 .headerToolbar {
-  display: 'flex';
-  justify-content: 'space-between';
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   width: 100vw;
 }
 
 .headerImageContainer {
   position: relative;
-  width: 12rem;
-  height: 7rem;
+  width: 140px;
+  height: 80px;
 }
 
 .headerLangSelector {
   display: block;
-  padding-right: 2rem;
+  padding-right: 20px;
+}
+
+.headerMobile {
+  display: flex;
+}
+
+.headerImageContainerMobile {
+  height: 4rem;
+  position: fixed;
+  top: 0.7rem;
+  width: 5.5rem;
+  z-index: 10;
+}
+
+.headerLangSelectorMobile {
+  height: 4rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 0.7rem;
+  width: 3rem;
+  z-index: 10;
+}
+
+@media screen and (min-width: 750px) {
+  .headerDesktop {
+    display: flex;
+  }
+  .headerMobile {
+    display: none;
+  }  
 }

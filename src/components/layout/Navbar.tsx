@@ -7,7 +7,6 @@ import { navbarContent } from '../../content/navbar'
 import { PageProps } from '../../common/types'
 import styles from './Navbar.module.css'
 
-
 export const Navbar: FC<PageProps> = ({ lang, route }) => {
   const content = navbarContent[lang]
 
