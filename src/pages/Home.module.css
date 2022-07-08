@@ -14,7 +14,7 @@
   top: 20%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  filter: drop-shadow(0 0 0.75rem #f2bf08);
+  filter: drop-shadow(0 0 0.2rem #f2bf08);
 }
 
 .homeVideo {
@@ -26,4 +26,42 @@
   min-width: 100vw;
   min-height: 50vh;
   filter: contrast(50%);
+}
+
+.homeButton {
+  bottom: 20%;
+  color: #f5f8fa;
+  font-weight: 550;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.whatsappFloat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsappFloat {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
 }
