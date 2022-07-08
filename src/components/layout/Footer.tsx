@@ -12,6 +12,7 @@ export const Footer: FC<PageProps> = ({ lang }) => {
 
   return (
     <footer className={styles.footer}>
+      <div className={styles.footerLine} />
       <div className={styles.footerImageContainer}>
         <Image src="/logo/VP_Logo_mediano.svg" alt="V&P Logo" layout="fill" />
       </div>
