@@ -5,6 +5,8 @@ import { Contact } from '../pages/Contact'
 import { CookiesPolicy } from '../pages/CookiesPolicy'
 import { LegalAdvise } from '../pages/LegalAdvise'
 import { PrivacyPolicy } from '../pages/PrivacyPolicy'
+import { Services } from '../pages/Services'
+import { Locations } from '../pages/Locations'
 
 export type CommonRoutes =
   | 'HOME'
@@ -22,13 +24,13 @@ export const allRoutes: AppRoutes = {
     en: '/',
   } },
   SERVICES: {
-    Component: Home, path: {
+    Component: Services, path: {
       es: '/servicios',
       en: '/services',
     },
   },
   LOCATIONS: {
-    Component: Home, path: {
+    Component: Locations, path: {
       es: '/lugares',
       en: '/locations',
     },

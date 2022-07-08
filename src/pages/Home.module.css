@@ -1,0 +1,29 @@
+.homeVideoContainer {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.homeTitle {
+  color: #f2bf08;
+  left: 50%;
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  filter: drop-shadow(0 0 0.75rem #f2bf08);
+}
+
+.homeVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 250vw;
+  min-width: 100vw;
+  min-height: 50vh;
+  filter: contrast(50%);
+}

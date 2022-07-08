@@ -30,7 +30,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
   }
 
   return (
-    <header>
+    <header className={styles.header}>
       <Box sx={{ flexGrow: 1 }} className={styles.headerDesktop}>
         <AppBar
           position="static"
