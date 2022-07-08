@@ -1,10 +1,11 @@
 import { FC, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import { Button, Toolbar } from '@mui/material'
-import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 import { PageProps } from '../../common/types'
 import { allRoutes } from '../../common/routes'
 import { Language } from '../../language/types'
@@ -16,6 +17,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
   const router = useRouter()
 
   const [ showNavbar, setShowNavbar ] = useState<boolean>(false)
+  const [ firstClick, setFirstClick ] = useState<boolean>(false)
 
   const handleSelectLang = (lang: Language) => {
     const nextRt = allRoutes[route].path[lang]
@@ -24,6 +26,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
 
   const toggleNavbar = () => {
     setShowNavbar((prev) => !prev)
+    setFirstClick(true)
   }
 
   return (
@@ -54,23 +57,34 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
         </AppBar>
       </Box>
       <div className={styles.headerMobile}>
-        <Button
-          className={styles.headerImageContainerMobile}
-          onClick={toggleNavbar}
+        <motion.div
+          whileTap={{ scale: 0.9, zIndex: 10 }}
         >
-          <Image
-            src="/logo/VP_Logo_mediano_circulo.svg"
-            alt="V&P Logo"
-            layout="fill"
-          />
-        </Button>
+          <Button
+            className={styles.headerImageContainerMobile}
+            onClick={toggleNavbar}
+          >
+            <Image
+              src="/logo/VP_Logo_mediano_circulo.svg"
+              alt="V&P Logo"
+              layout="fill"
+            />
+          </Button>
+        </motion.div>
         <div className={styles.headerLangSelectorMobile}>
           <LanguageSelector
             defaultLang={lang}
             onLanguageSelected={handleSelectLang}
           />
         </div>
-        { showNavbar && <Navbar lang={lang} route={route} /> }
+        <motion.div
+          animate={{ x: (showNavbar ? 0 : '-35vw'), zIndex: 9 }}
+          transition={{
+            x: { type: 'just' },
+          }}
+        >
+          { firstClick && <Navbar lang={lang} route={route}/> }
+        </motion.div>
       </div>
     </header>
   )

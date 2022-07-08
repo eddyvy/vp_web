@@ -4,28 +4,38 @@ import Image from 'next/image'
 import { PageProps } from '../../common/types'
 import { allRoutes } from '../../common/routes'
 import { footerContent } from '../../content/footer'
+import styles from './Footer.module.css'
+import { Button } from '@mui/material'
 
 export const Footer: FC<PageProps> = ({ lang }) => {
   const content = footerContent[lang]
 
   return (
-    <footer>
-      <div>
-        <Image src="/logo/VP_Logo_mediano.svg" alt="V&P Logo" width={150} height={130} />
+    <footer className={styles.footer}>
+      <div className={styles.footerImageContainer}>
+        <Image src="/logo/VP_Logo_mediano.svg" alt="V&P Logo" layout="fill" />
       </div>
-      <div>
-        <Link href={allRoutes.ABOUT.path[lang]}>
-          <a>{content.about}</a>
-        </Link>
-        <Link href={allRoutes.PRIVACY.path[lang]}>
-          <a>{content.privacy}</a>
-        </Link>
-        <Link href={allRoutes.COOKIES.path[lang]}>
-          <a>{content.cookies}</a>
-        </Link>
-        <Link href={allRoutes.LEGAL_ADVICE.path[lang]}>
-          <a>{content.legal}</a>
-        </Link>
+      <div className={styles.footerLinksContainer}>
+        <Button size="small">
+          <Link href={allRoutes.ABOUT.path[lang]}>
+            <a className={styles.footerLink}>{content.about}</a>
+          </Link>
+        </Button>
+        <Button size="small">
+          <Link href={allRoutes.PRIVACY.path[lang]}>
+            <a className={styles.footerLink}>{content.privacy}</a>
+          </Link>
+        </Button>
+        <Button size="small">
+          <Link href={allRoutes.COOKIES.path[lang]}>
+            <a className={styles.footerLink}>{content.cookies}</a>
+          </Link>
+        </Button>
+        <Button size="small">
+          <Link href={allRoutes.LEGAL_ADVICE.path[lang]}>
+            <a className={styles.footerLink}>{content.legal}</a>
+          </Link>
+        </Button>
       </div>
     </footer>
   )

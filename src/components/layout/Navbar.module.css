@@ -39,7 +39,7 @@
     flex-direction: row;
     height: auto;
     position: static;
-    z-index: 0;
+    z-index: auto;
   }
 
   .navbarButton {

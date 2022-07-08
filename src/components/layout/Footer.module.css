@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerImageContainer {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+}
+
+.footerLink {
+  color: #f2bf08;
+}
