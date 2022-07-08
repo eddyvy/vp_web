@@ -11,7 +11,7 @@ export const Footer: FC<PageProps> = ({ lang }) => {
   return (
     <footer>
       <div>
-        <Image src="/v'_logo.png" alt="V&P Logo" width={90} height={45} />
+        <Image src="/logo/VP_Logo_mediano.svg" alt="V&P Logo" width={150} height={130} />
       </div>
       <div>
         <Link href={allRoutes.ABOUT.path[lang]}>

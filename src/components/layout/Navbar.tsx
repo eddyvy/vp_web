@@ -4,49 +4,59 @@ import { Button } from '@mui/material'
 import { Language } from '../../language/types'
 import { allRoutes } from '../../common/routes'
 import { navbarContent } from '../../content/navbar'
+import { PageProps } from '../../common/types'
 import styles from './Navbar.module.css'
 
-type Props = { lang: Language }
 
-export const Navbar: FC<Props> = ({ lang }) => {
+export const Navbar: FC<PageProps> = ({ lang, route }) => {
   const content = navbarContent[lang]
 
   return (
     <>
       <nav className={styles.navbar}>
-        <Button
-          variant="text"
-        >
+        <Button className={styles.navbarButton} variant="text" size="large">
           <Link href={allRoutes.HOME.path[lang]}>
-            <a>{content.home}</a>
+            <a className={
+              `${route === 'HOME' && styles.navbarButtonSelected}`
+            }>
+              {content.home}
+            </a>
           </Link>
         </Button>
-        <Button
-          variant="text"
-        >
+        <Button className={styles.navbarButton} variant="text" size="large">
           <Link href={allRoutes.SERVICES.path[lang]}>
-            <a>{content.services}</a>
+            <a className={
+              `${route === 'SERVICES' && styles.navbarButtonSelected}`
+            }>
+              {content.services}
+            </a>
           </Link>
         </Button>
-        <Button
-          variant="text"
-        >
+        <Button className={styles.navbarButton} variant="text" size="large">
           <Link href={allRoutes.LOCATIONS.path[lang]}>
-            <a>{content.locations}</a>
+            <a className={
+              `${route === 'LOCATIONS' && styles.navbarButtonSelected}`
+            }>
+              {content.locations}
+            </a>
           </Link>
         </Button>
-        <Button
-          variant="text"
-        >
+        <Button className={styles.navbarButton} variant="text" size="large">
           <Link href={allRoutes.ABOUT.path[lang]}>
-            <a>{content.about}</a>
+            <a className={
+              `${route === 'ABOUT' && styles.navbarButtonSelected}`
+            }>
+              {content.about}
+            </a>
           </Link>
         </Button>
-        <Button
-          variant="text"
-        >
+        <Button className={styles.navbarButton} variant="text" size="large">
           <Link href={allRoutes.CONTACT.path[lang]}>
-            <a>{content.contact}</a>
+            <a className={
+              `${route === 'CONTACT' && styles.navbarButtonSelected}`
+            }>
+              {content.contact}
+            </a>
           </Link>
         </Button>
       </nav>

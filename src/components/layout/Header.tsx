@@ -37,7 +37,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
                 </a>
               </Link>
             </div>
-            <Navbar lang={lang}/>
+            <Navbar lang={lang} route={route} />
             <div className={styles.headerLangSelector}>
               <LanguageSelector
                 defaultLang={lang}

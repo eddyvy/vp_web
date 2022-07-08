@@ -5,4 +5,10 @@
   padding: 1rem;
 }
 
+.navbarButtonSelected {
+  border-bottom: 1px solid #f2bf08;
+}
 
+.navbarButton {
+  margin: 0 0.5rem;
+}
