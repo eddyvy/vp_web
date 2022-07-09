@@ -17,7 +17,7 @@ export const Home: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${'Home'/*content.title*/}`}</title>
+        <title>{`V&P | ${'Weddings and Events'/*content.title*/}`}</title>
       </Head>
       <div>
         <div className={styles.homeVideoContainer}>
@@ -32,7 +32,7 @@ export const Home: FC<PageProps> = (pageProps) => {
               type='video/mp4'
             />
           </video>
-          <h1 className={styles.homeTitle}>Weddings in Mallorca</h1>
+          <h1 className={styles.homeTitle}>Wedding destination Mallorca</h1>
           <Link href={allRoutes.CONTACT.path[lang]}>
             <a>
               <Button
@@ -43,6 +43,12 @@ export const Home: FC<PageProps> = (pageProps) => {
               </Button>
             </a>
           </Link>
+        </div>
+        <div className={styles.homeTextContainer}>
+          <p className={styles.homeText}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi esse veniam, culpa asperiores provident sapiente,
+            placeat beatae alias officia aperiam, quae porro quibusdam facilis eveniet quisquam dolorum delectus natus.
+          </p>
         </div>
         <div className={styles.homeImageListContainer}>
           <div className={styles.homeListContainer}>
