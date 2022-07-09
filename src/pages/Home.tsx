@@ -1,12 +1,14 @@
 import { FC } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Button } from '@mui/material'
 import { PageProps } from '../common/types'
+import { allRoutes } from '../common/routes'
 import { PageLayout } from '../components/layout/PageLayout'
+import { ServicesList } from '../components/list/ServicesList'
 // import { homeContent } from '../content/home'
 import styles from './Home.module.css'
-import { Button } from '@mui/material'
-import Link from 'next/link'
-import { allRoutes } from '../common/routes'
 
 export const Home: FC<PageProps> = (pageProps) => {
   const { lang } = pageProps
@@ -15,8 +17,7 @@ export const Home: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${'Home'/*content.title*/}`}</title> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <title>{`V&P | ${'Home'/*content.title*/}`}</title>
       </Head>
       <div>
         <div className={styles.homeVideoContainer}>
@@ -27,7 +28,7 @@ export const Home: FC<PageProps> = (pageProps) => {
             muted
           >
             <source
-              src='/videos/example.mp4'
+              src='/videos/mallorca_1.mp4'
               type='video/mp4'
             />
           </video>
@@ -38,22 +39,48 @@ export const Home: FC<PageProps> = (pageProps) => {
                 className={styles.homeButton}
                 variant='contained'
               >
-                More Info
+                I Want to Marry
               </Button>
             </a>
           </Link>
         </div>
-        <Link
-          href="https://wa.me/34620844085"
-        >
-          <a
-            className={styles.whatsappFloat}
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className={styles.homeImageListContainer}>
+          <div className={styles.homeListContainer}>
+            <h3>The best service you can have</h3>
+            <ServicesList />
+          </div>
+          <div className={styles.imageContainer}>
+            <Image
+              src='/images/novios_sol.jpg'
+              alt='Novios al sol'
+              layout='fill'
+            />
+          </div>
+        </div>
+        <div className={styles.homeVideoContainer}>
+          <video
+            className={styles.homeVideo}
+            loop
+            autoPlay
+            muted
           >
-            <i className="fa fa-whatsapp whatsapp-icon"></i>
-          </a>
-        </Link>
+            <source
+              src='/videos/proposicion.mp4'
+              type='video/mp4'
+            />
+          </video>
+          <h2 className={styles.homeSubTitle}>And they all lived happily ever after</h2>
+          <Link href={allRoutes.SERVICES.path[lang]}>
+            <a>
+              <Button
+                className={styles.homeButton}
+                variant='contained'
+              >
+                Know More
+              </Button>
+            </a>
+          </Link>
+        </div>
       </div>
     </PageLayout>
   )
