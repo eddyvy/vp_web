@@ -1,6 +1,6 @@
 import { BuildCommonPage } from '../src/common/CommonPage'
 
-const page = BuildCommonPage('LEGAL_ADVICE', 'es')
+const page = BuildCommonPage('DISCLAIMER', 'es')
 
 export const getStaticProps = page.getStaticProps
 export default page.NextPage

@@ -11,7 +11,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        {/* <title>{`V&P | ${content.title}`}</title> */}
+        <title>{`V&P | ${'Contact'}`}</title>
       </Head>
       <h1>CONTACT</h1>
     </PageLayout>

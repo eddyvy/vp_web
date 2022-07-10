@@ -3,7 +3,7 @@ import { Home } from '../pages/Home'
 import { AboutUs } from '../pages/AboutUs'
 import { Contact } from '../pages/Contact'
 import { CookiesPolicy } from '../pages/CookiesPolicy'
-import { LegalAdvise } from '../pages/LegalAdvise'
+import { Disclaimer } from '../pages/Disclaimer'
 import { PrivacyPolicy } from '../pages/PrivacyPolicy'
 import { Services } from '../pages/Services'
 import { Locations } from '../pages/Locations'
@@ -15,7 +15,7 @@ export type CommonRoutes =
   | 'ABOUT'
   | 'CONTACT'
   | 'COOKIES'
-  | 'LEGAL_ADVICE'
+  | 'DISCLAIMER'
   | 'PRIVACY'
 
 export const allRoutes: AppRoutes = {
@@ -47,9 +47,9 @@ export const allRoutes: AppRoutes = {
     es: '/politica-cookies',
     en: '/cookies-policy',
   } },
-  LEGAL_ADVICE: { Component: LegalAdvise, path: {
+  DISCLAIMER: { Component: Disclaimer, path: {
     es: '/aviso-legal',
-    en: '/legal-advise',
+    en: '/disclaimer',
   } },
   PRIVACY: { Component: PrivacyPolicy, path: {
     es: '/politica-privacidad',

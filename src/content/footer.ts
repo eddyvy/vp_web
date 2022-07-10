@@ -4,7 +4,7 @@ type FooterContent = {
   about: string
   privacy: string
   cookies: string
-  legal: string
+  disclaimer: string
 }
 
 export const footerContent: Translation<FooterContent> = {
@@ -12,12 +12,12 @@ export const footerContent: Translation<FooterContent> = {
     about: 'Sobre Nosotros',
     privacy: 'Politica de privacidad',
     cookies: 'Politica de cookies',
-    legal: 'Aviso legal',
+    disclaimer: 'Aviso legal',
   },
   en: {
     about: 'About Us',
     privacy: 'Privacy policy',
     cookies: 'Cookies policy',
-    legal: 'Legal Advise',
+    disclaimer: 'Disclaimer',
   },
 }

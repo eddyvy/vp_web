@@ -33,8 +33,8 @@ export const Footer: FC<PageProps> = ({ lang }) => {
           </Link>
         </Button>
         <Button size="small">
-          <Link href={allRoutes.LEGAL_ADVICE.path[lang]}>
-            <a className={styles.footerLink}>{content.legal}</a>
+          <Link href={allRoutes.DISCLAIMER.path[lang]}>
+            <a className={styles.footerLink}>{content.disclaimer}</a>
           </Link>
         </Button>
       </div>
