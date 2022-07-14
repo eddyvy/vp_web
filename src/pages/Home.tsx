@@ -7,17 +7,18 @@ import { PageProps } from '../common/types'
 import { allRoutes } from '../common/routes'
 import { PageLayout } from '../components/layout/PageLayout'
 import { ServicesList } from '../components/list/ServicesList'
-// import { homeContent } from '../content/home'
+import { homeContent } from '../content/home'
 import styles from './Home.module.css'
 
 export const Home: FC<PageProps> = (pageProps) => {
   const { lang } = pageProps
-  // const content = homeContent[lang]
+  const content = homeContent[lang]
 
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${'Weddings and Events'/*content.title*/}`}</title>
+        <title>{`V&P | ${content.headTitle}`}</title>
+        <meta content={content.headDescription} name="description"></meta>
       </Head>
       <div>
         <div className={styles.homeVideoContainer}>
@@ -32,27 +33,26 @@ export const Home: FC<PageProps> = (pageProps) => {
               type='video/mp4'
             />
           </video>
-          <h1 className={styles.homeTitle}>Wedding destination Mallorca</h1>
+          <h1 className={styles.homeTitle}>{content.title}</h1>
           <Link href={allRoutes.CONTACT.path[lang]}>
             <a>
               <Button
                 className={styles.homeButton}
                 variant='contained'
               >
-                I Want to Marry
+                {content.button1}
               </Button>
             </a>
           </Link>
         </div>
         <div className={styles.homeTextContainer}>
           <p className={styles.homeText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi esse veniam, culpa asperiores provident sapiente,
-            placeat beatae alias officia aperiam, quae porro quibusdam facilis eveniet quisquam dolorum delectus natus.
+            {content.text1}
           </p>
         </div>
         <div className={styles.homeImageListContainer}>
           <div className={styles.homeListContainer}>
-            <h3>The best service you can have</h3>
+            <h3>{content.subtitle1}</h3>
             <ServicesList />
           </div>
           <div className={styles.imageContainer}>
@@ -82,7 +82,7 @@ export const Home: FC<PageProps> = (pageProps) => {
                 className={styles.homeButton}
                 variant='contained'
               >
-                Know More
+                {content.button2}
               </Button>
             </a>
           </Link>
