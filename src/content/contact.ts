@@ -8,6 +8,8 @@ type ContactContent = {
   email: string
   message: string
   submitButton: string
+  successMsg: string
+  errorMsg: string
 }
 
 export const contactContent: Translation<ContactContent> = {
@@ -19,6 +21,8 @@ export const contactContent: Translation<ContactContent> = {
     email: 'Your email address',
     message: 'Write your message',
     submitButton: 'Submit',
+    successMsg: 'Your message has been sent!',
+    errorMsg: 'It has been an error sending your message',
   },
   es: {
     headTitle: 'Contacto',
@@ -28,5 +32,7 @@ export const contactContent: Translation<ContactContent> = {
     email: 'Tu dirección de email',
     message: 'Escribe tu mensaje',
     submitButton: 'Enviar',
+    successMsg: '¡Su mensaje ha sido enviado!',
+    errorMsg: 'Ha habido un error al enviar el mensaje',
   },
 }

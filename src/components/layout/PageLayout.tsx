@@ -8,9 +8,7 @@ import { Whatsapp } from '../social/Whatsapp'
 export const PageLayout: FC<PageProps> = ({ children, ...pageProps }) => {
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-      </Head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
       <Head>
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
