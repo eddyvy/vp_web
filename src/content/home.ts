@@ -9,7 +9,14 @@ type HomeContent = {
   text2: string
   subtitle1: string
   button2: string
+  subtitle2: string
   button3: string
+  subtitle3: string
+  button4: string
+  carouselLabel1: string
+  carouselLabel2: string
+  carouselLabel3: string
+  carouselLabel4: string
 }
 
 export const homeContent: Translation<HomeContent> = {
@@ -22,7 +29,14 @@ export const homeContent: Translation<HomeContent> = {
     text2: 'No wonder why… This beautiful island offers you absolutely everything you are looking for.',
     subtitle1: 'The best service you can have',
     button2: 'A trip for you',
+    subtitle2: 'And they all lived happily ever after',
     button3: 'Come to Mallorca',
+    subtitle3: 'V&P Experience',
+    button4: 'More info',
+    carouselLabel1: 'Your dream day',
+    carouselLabel2: 'Mallorca island',
+    carouselLabel3: 'Remember for ever',
+    carouselLabel4: 'As you wish',
   },
   es: {
     headTitle: 'Bodas y Eventos',
@@ -33,6 +47,13 @@ export const homeContent: Translation<HomeContent> = {
     text2: 'Sin lugar a dudas esta bonita isla ofrece absolutamente todo lo que estáis buscando.',
     subtitle1: 'El mejor servicio que puedas imaginar',
     button2: 'Un viaje para vosotros',
+    subtitle2: 'Y vivieron felices para siempre',
     button3: 'Ven a Mallorca',
+    subtitle3: 'Experiencia V&P',
+    button4: 'Saber más',
+    carouselLabel1: 'Tu día soñado',
+    carouselLabel2: 'Isla de Mallorca',
+    carouselLabel3: 'Recuerdo para siempre',
+    carouselLabel4: 'A tu gusto',
   },
 }

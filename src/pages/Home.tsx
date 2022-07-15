@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Button } from '@mui/material'
+import { Button, Paper } from '@mui/material'
 import { PageProps } from '../common/types'
 import { allRoutes } from '../common/routes'
 import { PageLayout } from '../components/layout/PageLayout'
@@ -9,28 +9,28 @@ import { AppCarousel } from '../components/carousel/AppCarousel'
 import { homeContent } from '../content/home'
 import styles from './Home.module.css'
 
-const images = [
-  {
-    label: 'Your dream day',
-    imgPath: '/images/carousel_1.jpg',
-  },
-  {
-    label: 'Mallorca Island',
-    imgPath: '/images/carousel_2.jpg',
-  },
-  {
-    label: 'For ever',
-    imgPath: '/images/carousel_3.jpg',
-  },
-  {
-    label: 'As you wish',
-    imgPath: '/images/carousel_4.jpg',
-  },
-]
-
 export const Home: FC<PageProps> = (pageProps) => {
   const { lang } = pageProps
   const content = homeContent[lang]
+
+  const images = [
+    {
+      label: content.carouselLabel1,
+      imgPath: '/images/carousel_1.jpg',
+    },
+    {
+      label: content.carouselLabel2,
+      imgPath: '/images/carousel_2.jpg',
+    },
+    {
+      label: content.carouselLabel3,
+      imgPath: '/images/carousel_3.jpg',
+    },
+    {
+      label: content.carouselLabel4,
+      imgPath: '/images/carousel_4.jpg',
+    },
+  ]
 
   return (
     <PageLayout {...pageProps}>
@@ -63,15 +63,19 @@ export const Home: FC<PageProps> = (pageProps) => {
             </a>
           </Link>
         </div>
-        <div className={styles.homeImageListContainer}>
+        <div className={styles.homeSectionContainer}>
           <AppCarousel images={images} />
-          <div className={styles.homeImageListButton}>
-            <Button
-              className={styles.homeButtonList}
-              variant='contained'
-            >
-              {content.button2}
-            </Button>
+          <div className={styles.homeSectionButton}>
+            <Link href={allRoutes.LOCATIONS.path[lang]}>
+              <a>
+                <Button
+                  className={styles.homeButtonList}
+                  variant='contained'
+                >
+                  {content.button2}
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
         <div className={styles.homeVideoContainer}>
@@ -86,7 +90,7 @@ export const Home: FC<PageProps> = (pageProps) => {
               type='video/mp4'
             />
           </video>
-          <h2 className={styles.homeSubTitle}>And they all lived happily ever after</h2>
+          <h2 className={styles.homeSubTitle}>{content.subtitle2}</h2>
           <Link href={allRoutes.LOCATIONS.path[lang]}>
             <a>
               <Button
@@ -97,6 +101,23 @@ export const Home: FC<PageProps> = (pageProps) => {
               </Button>
             </a>
           </Link>
+        </div>
+        <div className={styles.homeSectionContainer}>
+          <div className={styles.homeLastSection}>
+            <h3 className={styles.homeLastSubtitle}>{content.subtitle3}</h3>
+            <div className={styles.homeLastSectionButton}>
+              <Link href={allRoutes.ABOUT.path[lang]}>
+                <a>
+                  <Button
+                    className={styles.homeButtonList}
+                    variant='contained'
+                  >
+                    {content.button4}
+                  </Button>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </PageLayout>

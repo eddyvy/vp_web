@@ -77,10 +77,10 @@
   width: 28rem;
 }
 
-.homeImageListContainer {
+.homeSectionContainer {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
@@ -90,6 +90,19 @@
   margin-bottom: 4rem;
 }
 
-.homeImageListButton {
+.homeSectionButton {
   margin: 1rem 4rem 4rem 4rem;
+}
+
+.homeLastSection {
+  margin: 1rem 4rem 4rem 4rem;
+}
+
+.homeLastSubtitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.homeLastSectionButton {
+  margin: 1rem
 }
