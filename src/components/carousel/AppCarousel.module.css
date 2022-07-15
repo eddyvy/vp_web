@@ -1,0 +1,15 @@
+.carouselContainer {
+  min-width: 35rem;
+  margin-bottom: 4rem;
+}
+
+.imageHeadText {
+  text-align: center;
+  font-size: large;
+  width: 100%;
+}
+
+.carouselImgContainer {
+  overflow: hidden;
+  max-height: 60vh;
+}
