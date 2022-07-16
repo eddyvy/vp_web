@@ -1,10 +1,9 @@
 import { FC, useState } from 'react'
 import Image from 'next/image'
-import { useTheme } from '@mui/material/styles'
+import { SxProps, useTheme } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import MobileStepper from '@mui/material/MobileStepper'
 import Paper from '@mui/material/Paper'
-import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
@@ -38,8 +37,19 @@ export const AppCarousel: FC<Props> = ({ images }) => {
     setActiveStep(step)
   }
 
+  const carouselContainer: SxProps = {
+    minWidth: '300px',
+    width: '30vw',
+    marginBottom: '4rem',
+  }
+
+  const carouselImgContainer: SxProps = {
+    overflow: 'hidden',
+    maxHeight: '60vh',
+  }
+
   return (
-    <Box className={styles.carouselContainer}>
+    <Box sx={carouselContainer}>
       <Paper
         square
         elevation={0}
@@ -50,12 +60,9 @@ export const AppCarousel: FC<Props> = ({ images }) => {
           pl: 2,
         }}
       >
-        <Typography
-          component='h3'
-          className={styles.imageHeadText}
-        >
+        <h3 className={styles.imageHeadText} >
           {images[activeStep].label}
-        </Typography>
+        </h3>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -66,7 +73,7 @@ export const AppCarousel: FC<Props> = ({ images }) => {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
-              <Paper className={styles.carouselImgContainer}>
+              <Paper sx={carouselImgContainer}>
                 <Image
                   src={step.imgPath}
                   alt={step.label}
@@ -82,7 +89,6 @@ export const AppCarousel: FC<Props> = ({ images }) => {
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
-        className={styles.carouselButtonsBar}
         steps={maxSteps}
         position='static'
         activeStep={activeStep}

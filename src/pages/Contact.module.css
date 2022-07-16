@@ -10,18 +10,3 @@
 .contactTitle {
   font-weight: 300;
 }
-
-.contactFormContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  max-width: 500px;
-  min-width: 350px;
-  width: 30vw;
-}
-
-.contactFormInput {
-  margin: 1rem 0;
-  width: 70%;
-}

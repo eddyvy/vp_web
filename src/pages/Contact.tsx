@@ -1,6 +1,6 @@
 import { ChangeEventHandler, FC, FormEventHandler, useState } from 'react'
 import Head from 'next/head'
-import { Button, Paper, TextField } from '@mui/material'
+import { Button, Paper, SxProps, TextField } from '@mui/material'
 import { PageProps } from '../common/types'
 import { PageLayout } from '../components/layout/PageLayout'
 import { contactContent } from '../content/contact'
@@ -31,6 +31,21 @@ export const Contact: FC<PageProps> = (pageProps) => {
     setSent(true)
   }
 
+  const contactFormContainer: SxProps = {
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '15px',
+    maxWidth: '500px',
+    minWidth: '350px',
+    width: '30vw',
+  }
+
+  const contactFormInput: SxProps = {
+    margin: '1rem 0',
+    width: '70%',
+  }
+
   return (
     <PageLayout {...pageProps}>
       <Head>
@@ -40,7 +55,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
       <div className={styles.contactContainer}>
         <h1 className={styles.contactTitle}>{content.title}</h1>
         <form action="https://formsubmit.co/968e0e2a14aa6f2be5a91cd44b09774e" method="POST" target="_blank" onSubmit={handleSubmit}>
-          <Paper className={styles.contactFormContainer}>
+          <Paper sx={contactFormContainer} >
             <TextField
               id='contactFormNameInput'
               type='text'
@@ -48,7 +63,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
               required
               label={content.name}
               variant='standard'
-              className={styles.contactFormInput}
+              sx={contactFormInput}
               onChange={handleChange}
               value={formState.name}
             />
@@ -59,7 +74,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
               required
               label={content.email}
               variant='standard'
-              className={styles.contactFormInput}
+              sx={contactFormInput}
               onChange={handleChange}
               value={formState.email}
             />
@@ -72,7 +87,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
               variant='outlined'
               multiline
               rows={5}
-              className={styles.contactFormInput}
+              sx={contactFormInput}
               onChange={handleChange}
               value={formState.message}
             />

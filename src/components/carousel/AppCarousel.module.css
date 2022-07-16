@@ -7,10 +7,6 @@
 .imageHeadText {
   text-align: center;
   font-size: large;
+  font-weight: 300;
   width: 100%;
-}
-
-.carouselImgContainer {
-  overflow: hidden;
-  max-height: 60vh;
 }

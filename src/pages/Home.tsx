@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Button, Paper } from '@mui/material'
+import { Button } from '@mui/material'
 import { PageProps } from '../common/types'
 import { allRoutes } from '../common/routes'
 import { PageLayout } from '../components/layout/PageLayout'
