@@ -9,13 +9,6 @@
   display: none;
 }
 
-.headerToolbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  width: 100vw;
-}
-
 .headerImageContainer {
   position: relative;
   width: 140px;

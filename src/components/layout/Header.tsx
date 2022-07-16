@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import { Button, Toolbar } from '@mui/material'
+import { Button, SxProps, Toolbar } from '@mui/material'
 import { motion } from 'framer-motion'
 import { PageProps } from '../../common/types'
 import { allRoutes } from '../../common/routes'
@@ -29,33 +29,42 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
     setFirstClick(true)
   }
 
+  const headerToolbar: SxProps = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: 0,
+    width: '100vw',
+  }
+
   return (
     <header className={styles.header}>
-      <Box sx={{ flexGrow: 1 }} className={styles.headerDesktop}>
-        <AppBar
-          position="static"
-          color="transparent"
-        >
-          <Toolbar
-            className={styles.headerToolbar}
+      <div className={styles.headerDesktop}>
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar
+            position="static"
+            color="transparent"
           >
-            <div className={styles.headerImageContainer}>
-              <Link href={allRoutes.HOME.path[lang]}>
-                <a>
-                  <Image src="/logo/VP_Logo_pequeno.png" alt="V&P Logo" layout="fill" />
-                </a>
-              </Link>
-            </div>
-            <Navbar lang={lang} route={route} />
-            <div className={styles.headerLangSelector}>
-              <LanguageSelector
-                defaultLang={lang}
-                onLanguageSelected={handleSelectLang}
-              />
-            </div>
-          </Toolbar>
-        </AppBar>
-      </Box>
+            <Toolbar
+              sx={headerToolbar}
+            >
+              <div className={styles.headerImageContainer}>
+                <Link href={allRoutes.HOME.path[lang]}>
+                  <a>
+                    <Image src="/logo/VP_Logo_pequeno.png" alt="V&P Logo" layout="fill" />
+                  </a>
+                </Link>
+              </div>
+              <Navbar lang={lang} route={route} />
+              <div className={styles.headerLangSelector}>
+                <LanguageSelector
+                  defaultLang={lang}
+                  onLanguageSelected={handleSelectLang}
+                />
+              </div>
+            </Toolbar>
+          </AppBar>
+        </Box>
+      </div>
       <div className={styles.headerMobile}>
         <motion.div
           whileTap={{ scale: 0.9, zIndex: 10 }}
