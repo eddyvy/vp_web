@@ -66,7 +66,7 @@ export const Home: FC<PageProps> = (pageProps) => {
         <div className={styles.homeSectionContainer}>
           <AppCarousel images={images} />
           <div className={styles.homeSectionButton}>
-            <Link href={allRoutes.LOCATIONS.path[lang]}>
+            <Link href={allRoutes.SERVICES.path[lang]}>
               <a>
                 <Button
                   className={styles.homeButtonList}

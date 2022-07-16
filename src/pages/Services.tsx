@@ -1,19 +1,64 @@
 import { FC } from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 import { PageProps } from '../common/types'
 import { PageLayout } from '../components/layout/PageLayout'
-// import { contactContent } from '../content/contact'
+import { servicesContent } from '../content/services'
+import styles from './Services.module.css'
+import { Button } from '@mui/material'
+import { allRoutes } from '../common/routes'
 
 export const Services: FC<PageProps> = (pageProps) => {
   const { lang } = pageProps
-  // const content = contactContent[lang]
+  const content = servicesContent[lang]
 
   return (
     <PageLayout {...pageProps}>
       <Head>
-        {/* <title>{`V&P | ${content.title}`}</title> */}
+        <title>{`V&P | ${content.headTitle}`}</title>
+        <meta content={content.headDescription} name="description"></meta>
       </Head>
-      <h1>SERVICES</h1>
+      <div className={styles.servicesTopImgContainer}>
+        <h1 className={styles.servicesTitle}>{content.title}</h1>
+        <Image
+          src='/images/votos.jpg'
+          alt='Services top image'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center center'
+          className={styles.servicesTopImg}
+        />
+      </div>
+      <div className={styles.servicesContainer}>
+        <div className={styles.servicesBody}>
+          <div className={styles.servicesTextCard}>
+            <p>{content.text1}</p>
+            <p>{content.text2}</p>
+            <p>{content.text3}</p>
+          </div>
+          <div className={styles.servicesImgContainer}>
+            <Image
+              src='/images/ready.jpg'
+              alt='Services image'
+              layout='fill'
+              objectFit='cover'
+              objectPosition='center center'
+              className={styles.servicesTopImg}
+            />
+          </div>
+        </div>
+        <Link href={allRoutes.CONTACT.path[lang]}>
+          <a>
+            <Button
+              className={styles.serviceButton}
+              variant='contained'
+            >
+              {content.button}
+            </Button>
+          </a>
+        </Link>
+      </div>
     </PageLayout>
   )
 }
