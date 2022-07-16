@@ -46,7 +46,7 @@ export const Home: FC<PageProps> = (pageProps) => {
           muted
         >
           <source
-            src='/videos/mallorca_1.mp4'
+            src='https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4'
             type='video/mp4'
           />
         </video>
@@ -95,7 +95,7 @@ export const Home: FC<PageProps> = (pageProps) => {
           muted
         >
           <source
-            src='/videos/proposicion.mp4'
+            src='https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4'
             type='video/mp4'
           />
         </video>
