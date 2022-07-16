@@ -12,7 +12,7 @@ export const Whatsapp: FC<{ phone: number }> = ({ phone }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa fa-whatsapp whatsapp-icon"></i>
+        <i className="fa fa-whatsapp fa-lg"></i>
       </a>
     </Link>
   )

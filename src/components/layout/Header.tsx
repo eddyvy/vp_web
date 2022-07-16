@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import { Button, SxProps, Toolbar } from '@mui/material'
+import { SxProps, Toolbar } from '@mui/material'
 import { motion } from 'framer-motion'
 import { PageProps } from '../../common/types'
 import { allRoutes } from '../../common/routes'
@@ -68,17 +68,14 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.headerMobile}>
         <motion.div
           whileTap={{ scale: 0.9, zIndex: 10 }}
+          className={styles.headerImageContainer}
+          onClick={toggleNavbar}
         >
-          <Button
-            className={styles.headerImageContainerMobile}
-            onClick={toggleNavbar}
-          >
-            <Image
-              src="/logo/VP_Logo_mediano_circulo.svg"
-              alt="V&P Logo"
-              layout="fill"
-            />
-          </Button>
+          <Image
+            src="/logo/VP_Logo_mediano_circulo.svg"
+            alt="V&P Logo"
+            layout="fill"
+          />
         </motion.div>
         <div className={styles.headerLangSelectorMobile}>
           <LanguageSelector
@@ -87,7 +84,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
           />
         </div>
         <motion.div
-          animate={{ x: (showNavbar ? 0 : '-35vw'), zIndex: 9 }}
+          animate={{ x: (showNavbar ? '-35vw' : '-70vw'), zIndex: 9 }}
           transition={{
             x: { type: 'just' },
           }}
