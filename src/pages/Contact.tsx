@@ -38,7 +38,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
         <meta content={content.headDescription} name='description'></meta>
       </Head>
       <div className={styles.contactContainer}>
-        <h1>{content.title}</h1>
+        <h1 className={styles.contactTitle}>{content.title}</h1>
         <form action="https://formsubmit.co/968e0e2a14aa6f2be5a91cd44b09774e" method="POST" target="_blank" onSubmit={handleSubmit}>
           <Paper className={styles.contactFormContainer}>
             <TextField
@@ -80,7 +80,10 @@ export const Contact: FC<PageProps> = (pageProps) => {
               id='contactFormSubmitButton'
               variant='contained'
               type='submit'
-              className={styles.contactFormButton}
+              sx={{
+                color: '#f5f8fa',
+                fontWeight: 550,
+              }}
             >
               {content.submitButton}
             </Button>

@@ -7,6 +7,10 @@
   margin-bottom: 2.5rem;
 }
 
+.contactTitle {
+  font-weight: 300;
+}
+
 .contactFormContainer {
   align-items: center;
   display: flex;
@@ -20,9 +24,4 @@
 .contactFormInput {
   margin: 1rem 0;
   width: 70%;
-}
-
-.contactFormButton {
-  color: #f5f8fa;
-  font-weight: 550;
 }

@@ -59,7 +59,10 @@ export const Locations: FC<PageProps> = (pageProps) => {
         <Link href={allRoutes.CONTACT.path[lang]}>
           <a>
             <Button
-              className={styles.locationsButton}
+              sx={{
+                color: '#f5f8fa',
+                fontWeight: 550,
+              }}
               variant='contained'
             >
               {content.button}

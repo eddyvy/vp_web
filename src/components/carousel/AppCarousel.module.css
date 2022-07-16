@@ -1,5 +1,6 @@
 .carouselContainer {
-  min-width: 35rem;
+  min-width: 300px;
+  width: 30vw;
   margin-bottom: 4rem;
 }
 

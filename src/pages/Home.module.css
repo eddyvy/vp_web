@@ -1,13 +1,6 @@
-.homeVideoContainer {
-  position: relative;
-  width: 100vw;
-  height: 80vh;
-  overflow: hidden;
-  margin-bottom: 4rem;
-}
-
 .homeTitle {
   color: #f2bf08;
+  font-weight: 300;
   left: 50%;
   font-size: 2.5rem;
   position: absolute;
@@ -31,6 +24,14 @@
   max-width: 65vw;
 }
 
+.homeVideoContainer {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
 .homeVideo {
   position: absolute;
   top: 50%;
@@ -42,22 +43,9 @@
   filter: contrast(50%);
 }
 
-.homeButton {
-  bottom: 20%;
-  color: #f5f8fa;
-  font-weight: 550;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.homeButtonList {
-  color: #f5f8fa;
-  font-weight: 550;
-}
-
 .homeSubTitle {
   color: #f2bf08;
+  font-weight: 300;
   left: 50%;
   font-size: 2.2rem;
   position: absolute;
