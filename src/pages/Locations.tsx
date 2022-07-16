@@ -37,6 +37,7 @@ export const Locations: FC<PageProps> = (pageProps) => {
             <p>{content.text2}</p>
             <p>{content.text3}</p>
             <p>{content.text4}</p>
+            <p>{content.text5}</p>
           </div>
           <div className={styles.locationsImgContainer}>
             <Image
@@ -49,8 +50,7 @@ export const Locations: FC<PageProps> = (pageProps) => {
             />
           </div>
         </div>
-        <div>
-          <p>{content.text5}</p>
+        <div className={styles.locationTextCardBottom}>
           <p>{content.text6}</p>
           <p>{content.text7}</p>
           <p>{content.text8}</p>

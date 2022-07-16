@@ -1,10 +1,10 @@
-.locationsTopImgContainer {
+.aboutTopImgContainer {
   height: 25vh;
   position: relative;
   width: 100%;
 }
 
-.locationsTitle {
+.aboutTitle {
   color: #f2bf08;
   left: 50%;
   font-size: 2.5rem;
@@ -16,16 +16,16 @@
   filter: drop-shadow(0 0 0.2rem #f2bf08);
 }
 
-.locationsTopImg {
+.aboutTopImg {
   filter: contrast(50%);
 }
 
-.locationsContainer {
+.aboutContainer {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.locationsBody {
+.aboutBody {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.locationsTextCard {
+.aboutTextCard {
   height: auto;
   max-width: 500px;
   min-width: 350px;
@@ -42,7 +42,7 @@
   margin: 15px;
 }
 
-.locationsImgContainer {
+.aboutImgContainer {
   max-width: 500px;
   min-width: 350px;
   height: 300px;
@@ -51,12 +51,7 @@
   margin: 15px;
 }
 
-.locationTextCardBottom {
-  padding: 0 2rem 2rem 2rem;
-}
-
-.locationsButton {
+.aboutButton {
   color: #f5f8fa;
   font-weight: 550;
-  margin-top: 2rem;
 }
