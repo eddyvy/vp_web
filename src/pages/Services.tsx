@@ -2,12 +2,12 @@ import { FC } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from '@mui/material'
 import { PageProps } from '../common/types'
 import { PageLayout } from '../components/layout/PageLayout'
 import { servicesContent } from '../content/services'
-import styles from './Services.module.css'
-import { Button } from '@mui/material'
 import { allRoutes } from '../common/routes'
+import styles from './Services.module.css'
 
 export const Services: FC<PageProps> = (pageProps) => {
   const { lang } = pageProps
@@ -51,7 +51,7 @@ export const Services: FC<PageProps> = (pageProps) => {
         <Link href={allRoutes.CONTACT.path[lang]}>
           <a>
             <Button
-              className={styles.serviceButton}
+              className={styles.servicesButton}
               variant='contained'
             >
               {content.button}
