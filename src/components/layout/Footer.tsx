@@ -14,7 +14,7 @@ export const Footer: FC<PageProps> = ({ lang }) => {
     <footer className={styles.footer}>
       <div className={styles.footerLine} />
       <div className={styles.footerImageContainer}>
-        <Image src="/logo/VP_Logo_mediano.svg" alt="V&P Logo" layout="fill" />
+        <Image src="/logo/VP_Logo_mediano.png" alt="V&P Logo" layout="fill" />
       </div>
       <div className={styles.footerLinksContainer}>
         <Button size="small">

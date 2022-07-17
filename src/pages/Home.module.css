@@ -1,14 +1,15 @@
 .homeTitle {
   color: #f2bf08;
-  font-weight: 300;
+  font-weight: 350;
   left: 50%;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   position: absolute;
   text-align: center;
   top: 20%;
   transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px #101010;
   z-index: 5;
-  filter: drop-shadow(0 0 0.2rem #f2bf08);
+  filter: drop-shadow(0 0 0.5rem #f2bf08);
 }
 
 .homeTextContainer {
@@ -40,7 +41,6 @@
   max-width: 250vw;
   min-width: 100vw;
   min-height: 50vh;
-  filter: contrast(50%);
 }
 
 .homeSubTitle {
@@ -53,7 +53,8 @@
   top: 20%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  filter: drop-shadow(0 0 0.2rem #f2bf08);
+  text-shadow: 0 0 10px #101010;
+  filter: drop-shadow(0 0 0.5rem #f2bf08);
 }
 
 .imageContainer {
@@ -94,4 +95,22 @@
 
 .homeLastSectionButton {
   margin: 1rem
+}
+
+.homeSectionText {
+  min-width: 300px;
+  width: 50vw;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.homeVideoSecond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 250vw;
+  min-width: 100vw;
+  min-height: 50vh;
+  filter: contrast(70%);
 }

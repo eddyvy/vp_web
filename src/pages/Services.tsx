@@ -22,7 +22,7 @@ export const Services: FC<PageProps> = (pageProps) => {
       <div className={styles.servicesTopImgContainer}>
         <h1 className={styles.servicesTitle}>{content.title}</h1>
         <Image
-          src='/images/votos.jpg'
+          src='/images/pexels-trung-nguyen-2959192.jpg'
           alt='Services top image'
           layout='fill'
           objectFit='cover'
@@ -39,12 +39,11 @@ export const Services: FC<PageProps> = (pageProps) => {
           </div>
           <div className={styles.servicesImgContainer}>
             <Image
-              src='/images/ready.jpg'
+              src='/images/pexels-nathan-cowley-1128783.jpg'
               alt='Services image'
               layout='fill'
               objectFit='cover'
               objectPosition='center center'
-              className={styles.servicesTopImg}
             />
           </div>
         </div>

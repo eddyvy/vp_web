@@ -41,12 +41,11 @@ export const Locations: FC<PageProps> = (pageProps) => {
           </div>
           <div className={styles.locationsImgContainer}>
             <Image
-              src='/images/table.jpg'
+              src='/images/pexels-oleksandr-pidvalnyi-341372.jpg'
               alt='Locations image'
               layout='fill'
               objectFit='cover'
               objectPosition='center center'
-              className={styles.locationsTopImg}
             />
           </div>
         </div>

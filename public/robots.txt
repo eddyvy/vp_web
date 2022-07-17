@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /cookies-policy
+Disallow: /privacy-policy
+Disallow: /diclaimer
+
+Disallow: /politica-cookies
+Disallow: /politica-privacidad
+Disallow: /aviso-legal
+
+Sitemap: https://vpmallorca.com/sitemap.xml

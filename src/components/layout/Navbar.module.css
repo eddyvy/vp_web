@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  align-items: center;
+  align-items: flex-end;
   background-color: #f5f8fa;
   border-right: 1px solid #f2f2f2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -20,8 +20,9 @@
   height: 100vh;
   justify-content: flex-start;
   padding-top: 10vh;
+  padding-right: 10px;
   position: fixed;
-  width: 35vw;
+  width: 50vw;
   z-index: 9;
 }
 

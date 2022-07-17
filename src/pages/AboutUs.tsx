@@ -19,17 +19,17 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
         <title>{`V&P | ${content.headTitle}`}</title>
         <meta content={content.headDescription} name="description"></meta>
       </Head>
-      <div className={styles.aboutTopImgContainer}>
-        <h1 className={styles.aboutTitle}>{content.title}</h1>
-        <Image
-          src='/images/room.jpg'
+      <h1 className={styles.aboutTitle}>{content.title}</h1>
+      {/* <div className={styles.aboutTopImgContainer}> */}
+      {/* <Image
+          src='/images/'
           alt='About top image'
           layout='fill'
           objectFit='cover'
           objectPosition='center center'
           className={styles.aboutTopImg}
         />
-      </div>
+      </div> */}
       <div className={styles.aboutContainer}>
         <div className={styles.aboutBody}>
           <div className={styles.aboutTextCard}>
@@ -47,7 +47,6 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
               layout='fill'
               objectFit='cover'
               objectPosition='center center'
-              className={styles.aboutTopImg}
             />
           </div>
         </div>

@@ -68,11 +68,11 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.headerMobile}>
         <motion.div
           whileTap={{ scale: 0.9, zIndex: 10 }}
-          className={styles.headerImageContainer}
+          className={styles.headerImageContainerMobile}
           onClick={toggleNavbar}
         >
           <Image
-            src="/logo/VP_Logo_mediano_circulo.svg"
+            src="/logo/VP_Logo_pequeno.png"
             alt="V&P Logo"
             layout="fill"
           />
@@ -84,7 +84,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
           />
         </div>
         <motion.div
-          animate={{ x: (showNavbar ? '-35vw' : '-70vw'), zIndex: 9 }}
+          animate={{ x: (showNavbar ? '-15vw' : '-100vw'), zIndex: 9 }}
           transition={{
             x: { type: 'just' },
           }}

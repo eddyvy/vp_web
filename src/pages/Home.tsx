@@ -16,19 +16,31 @@ export const Home: FC<PageProps> = (pageProps) => {
   const images = [
     {
       label: content.carouselLabel1,
-      imgPath: '/images/carousel_1.jpg',
+      imgPath: '/images/jakob-owens-5d4XBj7GYeo-unsplash.jpg',
     },
     {
       label: content.carouselLabel2,
-      imgPath: '/images/carousel_2.jpg',
+      imgPath: '/images/jonathan-borba-HabFYy1Iic0-unsplash.jpg',
     },
     {
       label: content.carouselLabel3,
-      imgPath: '/images/carousel_3.jpg',
+      imgPath: '/images/leonardo-miranda-dvF6s1H1x68-unsplash.jpg',
     },
     {
       label: content.carouselLabel4,
-      imgPath: '/images/carousel_4.jpg',
+      imgPath: '/images/nathan-dumlao-BOhDR9n4u2s-unsplash.jpg',
+    },
+    {
+      label: content.carouselLabel5,
+      imgPath: '/images/pexels-emir-kaan-okutan-2403569.jpg',
+    },
+    {
+      label: content.carouselLabel6,
+      imgPath: '/images/pexels-jonathan-borba-3014856.jpg',
+    },
+    {
+      label: content.carouselLabel7,
+      imgPath: '/images/pexels-lisa-8685559.jpg',
     },
   ]
 
@@ -70,6 +82,9 @@ export const Home: FC<PageProps> = (pageProps) => {
         </Link>
       </div>
       <div className={styles.homeSectionContainer}>
+        <div className={styles.homeSectionText}>
+          <p>{content.paragraph}</p>
+        </div>
         <AppCarousel images={images} />
         <div className={styles.homeSectionButton}>
           <Link href={allRoutes.SERVICES.path[lang]}>
@@ -89,7 +104,7 @@ export const Home: FC<PageProps> = (pageProps) => {
       </div>
       <div className={styles.homeVideoContainer}>
         <video
-          className={styles.homeVideo}
+          className={styles.homeVideoSecond}
           loop
           autoPlay
           muted

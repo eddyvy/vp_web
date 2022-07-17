@@ -5,6 +5,12 @@
 }
 
 .aboutTitle {
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* .aboutTitle {
   color: #f2bf08;
   font-weight: 300;
   left: 50%;
@@ -14,12 +20,13 @@
   top: 20%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  filter: drop-shadow(0 0 0.2rem #f2bf08);
-}
+  text-shadow: 0 0 10px #101010;
+  filter: drop-shadow(0 0 0.5rem #f2bf08);
+} */
 
-.aboutTopImg {
+/* .aboutTopImg {
   filter: contrast(50%);
-}
+} */
 
 .aboutContainer {
   text-align: center;
@@ -27,6 +34,7 @@
 }
 
 .aboutBody {
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
