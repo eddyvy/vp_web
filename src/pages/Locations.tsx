@@ -22,7 +22,7 @@ export const Locations: FC<PageProps> = (pageProps) => {
       <div className={styles.locationsTopImgContainer}>
         <h1 className={styles.locationsTitle}>{content.title}</h1>
         <Image
-          src='/images/mallorca_1.jpg'
+          src={content.image1}
           alt='Locations top image'
           layout='fill'
           objectFit='cover'
@@ -41,7 +41,7 @@ export const Locations: FC<PageProps> = (pageProps) => {
           </div>
           <div className={styles.locationsImgContainer}>
             <Image
-              src='/images/pexels-oleksandr-pidvalnyi-341372.jpg'
+              src={content.image2}
               alt='Locations image'
               layout='fill'
               objectFit='cover'

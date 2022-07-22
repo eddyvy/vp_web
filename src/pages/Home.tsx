@@ -16,31 +16,31 @@ export const Home: FC<PageProps> = (pageProps) => {
   const images = [
     {
       label: content.carouselLabel1,
-      imgPath: '/images/jakob-owens-5d4XBj7GYeo-unsplash.jpg',
+      imgPath: content.imageCar1,
     },
     {
       label: content.carouselLabel2,
-      imgPath: '/images/jonathan-borba-HabFYy1Iic0-unsplash.jpg',
+      imgPath: content.imageCar2,
     },
     {
       label: content.carouselLabel3,
-      imgPath: '/images/leonardo-miranda-dvF6s1H1x68-unsplash.jpg',
+      imgPath: content.imageCar3,
     },
     {
       label: content.carouselLabel4,
-      imgPath: '/images/nathan-dumlao-BOhDR9n4u2s-unsplash.jpg',
+      imgPath: content.imageCar4,
     },
     {
       label: content.carouselLabel5,
-      imgPath: '/images/pexels-emir-kaan-okutan-2403569.jpg',
+      imgPath: content.imageCar5,
     },
     {
       label: content.carouselLabel6,
-      imgPath: '/images/pexels-jonathan-borba-3014856.jpg',
+      imgPath: content.imageCar6,
     },
     {
       label: content.carouselLabel7,
-      imgPath: '/images/pexels-lisa-8685559.jpg',
+      imgPath: content.imageCar7,
     },
   ]
 
@@ -58,7 +58,7 @@ export const Home: FC<PageProps> = (pageProps) => {
           muted
         >
           <source
-            src='https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4'
+            src={content.video1}
             type='video/mp4'
           />
         </video>

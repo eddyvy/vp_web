@@ -14,6 +14,8 @@ type LocationsContent = {
   text8: string
   text9: string
   button: string
+  image1: string
+  image2: string
 }
 
 export const locationsContent: Translation<LocationsContent> = {
@@ -31,6 +33,8 @@ export const locationsContent: Translation<LocationsContent> = {
     text8: 'We will offer you several possibilities that meet your requirements and desires.',
     text9: 'We have no doubt that we will present you the space that characterizes you and makes you fall in love.',
     button: 'Contact us',
+    image1: 'https://i.imgur.com/ph8BYr8.jpg',
+    image2: 'https://i.imgur.com/kQSYYch.jpg',
   },
   es: {
     headTitle: 'Lugares y Fincas',
@@ -46,5 +50,7 @@ export const locationsContent: Translation<LocationsContent> = {
     text8: 'Si no lo tienes claro, te ofreceremos varias posibilidades que cumplan con tus gustos y deseos.',
     text9: 'No tenemos ninguna duda de que te presentaremos el espacio que te caracteriza y enamora.',
     button: 'Contáctanos',
+    image1: 'https://i.imgur.com/ph8BYr8.jpg',
+    image2: 'https://i.imgur.com/kQSYYch.jpg',
   },
 }

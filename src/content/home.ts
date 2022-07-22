@@ -21,6 +21,15 @@ type HomeContent = {
   carouselLabel6: string
   carouselLabel7: string
   paragraph: string
+  imageCar1: string
+  imageCar2: string
+  imageCar3: string
+  imageCar4: string
+  imageCar5: string
+  imageCar6: string
+  imageCar7: string
+  video1: string
+  video2: string
 }
 
 export const homeContent: Translation<HomeContent> = {
@@ -44,6 +53,15 @@ export const homeContent: Translation<HomeContent> = {
     carouselLabel5: 'Enjoy the experience',
     carouselLabel6: 'Feel the moment',
     carouselLabel7: 'Perfect',
+    imageCar1: 'https://i.imgur.com/4XDzs3d.jpg',
+    imageCar2: 'https://i.imgur.com/LP6d4Xn.jpg',
+    imageCar3: 'https://i.imgur.com/1Y8vL0l.jpg',
+    imageCar4: 'https://i.imgur.com/isN2ywO.jpg',
+    imageCar5: 'https://i.imgur.com/D7L71zA.jpg',
+    imageCar6: 'https://i.imgur.com/zh1zUjg.jpg',
+    imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
+    video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
+    video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
     paragraph: `
       Holiiiiiiii novia Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos
       commodi maiores exercitationem
@@ -82,6 +100,15 @@ export const homeContent: Translation<HomeContent> = {
     carouselLabel5: 'Disfruta la experiencia',
     carouselLabel6: 'Siente el momento',
     carouselLabel7: 'Perfecto',
+    imageCar1: 'https://i.imgur.com/4XDzs3d.jpg',
+    imageCar2: 'https://i.imgur.com/LP6d4Xn.jpg',
+    imageCar3: 'https://i.imgur.com/1Y8vL0l.jpg',
+    imageCar4: 'https://i.imgur.com/isN2ywO.jpg',
+    imageCar5: 'https://i.imgur.com/D7L71zA.jpg',
+    imageCar6: 'https://i.imgur.com/zh1zUjg.jpg',
+    imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
+    video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
+    video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
     paragraph: `
       V&P es la empresa especializada en la organización de bodas de destino en Mallorca. Organizar una boda desde el extranjero puede ser toda una odisea, por lo que nosotros nos encargamos de que esa odisea se convierta en un camino de rosas que os conduzca al día más bonito de vuestra vida. 
       Desde la elección del lugar perfecto, el catering, decoración, música, alojamiento, transporte, entretenimiento y mucho más!

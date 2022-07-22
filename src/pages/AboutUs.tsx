@@ -42,7 +42,7 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
           </div>
           <div className={styles.aboutImgContainer}>
             <Image
-              src='/images/planning.jpg'
+              src={content.image1}
               alt='About image'
               layout='fill'
               objectFit='cover'

@@ -8,6 +8,8 @@ type ServicesContent = {
   text2: string
   text3: string
   button: string
+  image1: string
+  image2: string
 }
 
 export const servicesContent: Translation<ServicesContent> = {
@@ -19,6 +21,8 @@ export const servicesContent: Translation<ServicesContent> = {
     text2: 'Therefore, the service we offer is a complete organization and coordination.',
     text3: 'We stand out for our personalized and close treatment. Each couple is unique and we will take care of fulfilling your wishes.',
     button: 'Contact us',
+    image1: 'https://i.imgur.com/sqAMZJM.jpg',
+    image2: 'https://i.imgur.com/N2Hw3fc.jpg',
   },
   es: {
     headTitle: 'Servicios',
@@ -28,5 +32,7 @@ export const servicesContent: Translation<ServicesContent> = {
     text2: 'Por ello, el servicio que ofrecemos es una organización y coordinación completa.',
     text3: 'Destacamos por nuestro trato personalizado y cercano. Cada pareja es única y nos encargaremos de cumplir vuestros deseos.',
     button: 'Contáctanos',
+    image1: 'https://i.imgur.com/sqAMZJM.jpg',
+    image2: 'https://i.imgur.com/N2Hw3fc.jpg',
   },
 }

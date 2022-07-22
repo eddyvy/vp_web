@@ -11,6 +11,7 @@ type AboutContent = {
   text5: string
   text6: string
   button: string
+  image1: string
 }
 
 export const aboutContent: Translation<AboutContent> = {
@@ -25,6 +26,7 @@ export const aboutContent: Translation<AboutContent> = {
     text5: 'We believe that it is just as important that both the day of your wedding and the process of organizing it.',
     text6: 'We want that process to be the greatest adventure of your life.',
     button: 'Contact us',
+    image1: 'https://i.imgur.com/OG6VpiN.jpg',
   },
   es: {
     headTitle: 'Sobre nosotros',
@@ -37,5 +39,6 @@ export const aboutContent: Translation<AboutContent> = {
     text5: 'Nosotros creemos que es igual de importante el día de vuestra boda como el proceso de organización de la misma.',
     text6: 'Queremos que dicho proceso sea una gran aventura en vuestra vida.',
     button: 'Contáctanos',
+    image1: 'https://i.imgur.com/OG6VpiN.jpg',
   },
 }
