@@ -62,23 +62,24 @@ export const homeContent: Translation<HomeContent> = {
     imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
     video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
     video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
-    paragraph: `
-      Holiiiiiiii novia Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos
-      commodi maiores exercitationem
-      atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
-      maiores exercitationem
-      atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
-      maiores exercitationem
-      atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
-      maiores exercitationem
-      atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
-      maiores exercitationem
-      atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
-    `,
+    // paragraph: `
+    //   Holiiiiiiii novia Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos
+    //   commodi maiores exercitationem
+    //   atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
+    //   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
+    //   maiores exercitationem
+    //   atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
+    //   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
+    //   maiores exercitationem
+    //   atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
+    //   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
+    //   maiores exercitationem
+    //   atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
+    //   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos commodi
+    //   maiores exercitationem
+    //   atque temporibus facere quaerat vitae, iure recusandae, quasi rem incidunt nisi laborum optio nostrum.
+    // `,
+    paragraph: '',
   },
   es: {
     headTitle: 'Bodas y Eventos',
@@ -109,20 +110,21 @@ export const homeContent: Translation<HomeContent> = {
     imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
     video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
     video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
-    paragraph: `
-      V&P es la empresa especializada en la organización de bodas de destino en Mallorca. Organizar una boda desde el extranjero puede ser toda una odisea, por lo que nosotros nos encargamos de que esa odisea se convierta en un camino de rosas que os conduzca al día más bonito de vuestra vida. 
-      Desde la elección del lugar perfecto, el catering, decoración, música, alojamiento, transporte, entretenimiento y mucho más!
-      Nuestra prioridad es ofrecer un trato atento y personalizado para que todo el proceso se convierta en la gran aventura de vuestra vida.
-      Mallorca es uno de los destinos preferidos alrededor del mundo para celebrar la boda soñada.
+    //     paragraph: `
+    //       V&P es la empresa especializada en la organización de bodas de destino en Mallorca. Organizar una boda desde el extranjero puede ser toda una odisea, por lo que nosotros nos encargamos de que esa odisea se convierta en un camino de rosas que os conduzca al día más bonito de vuestra vida.
+    //       Desde la elección del lugar perfecto, el catering, decoración, música, alojamiento, transporte, entretenimiento y mucho más!
+    //       Nuestra prioridad es ofrecer un trato atento y personalizado para que todo el proceso se convierta en la gran aventura de vuestra vida.
+    //       Mallorca es uno de los destinos preferidos alrededor del mundo para celebrar la boda soñada.
 
-Sin lugar a dudas esta preciosa isla ofrece absolutamente todo lo que estáis buscando.
+    // Sin lugar a dudas esta preciosa isla ofrece absolutamente todo lo que estáis buscando.
 
-Desde una pequeña cala romántica hasta el lugar más acogedor en la montaña, no olvidemos el buen tiempo que tiene la isla.
+    // Desde una pequeña cala romántica hasta el lugar más acogedor en la montaña, no olvidemos el buen tiempo que tiene la isla.
 
-Contamos con villas de todos los estilos que harán que te enamores a primera vista y desees quedarte ahí para siempre.
+    // Contamos con villas de todos los estilos que harán que te enamores a primera vista y desees quedarte ahí para siempre.
 
-El lugar de la celebración es sin duda la base desde donde se irá construyendo la totalidad de la historia.
-      
-    `,
+    // El lugar de la celebración es sin duda la base desde donde se irá construyendo la totalidad de la historia.
+
+    //     `,
+    paragraph: '',
   },
 }
