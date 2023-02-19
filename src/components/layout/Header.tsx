@@ -16,8 +16,8 @@ import styles from './Header.module.css'
 export const Header: FC<PageProps> = ({ lang, route }) => {
   const router = useRouter()
 
-  const [showNavbar, setShowNavbar] = useState<boolean>(false)
-  const [firstClick, setFirstClick] = useState<boolean>(false)
+  const [ showNavbar, setShowNavbar ] = useState<boolean>(false)
+  const [ firstClick, setFirstClick ] = useState<boolean>(false)
 
   const handleSelectLang = (lang: Language) => {
     const nextRt = allRoutes[route].path[lang]
