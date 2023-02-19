@@ -37,8 +37,8 @@ export const homeContent: Translation<HomeContent> = {
     headTitle: 'Wedding destination Mallorca',
     headDescription:
       'VP offers the best wedding experiences in Mallorca. Enjoy the best day of your life with VP.',
-    title: 'Weddings destination Mallorca',
-    button1: 'Marry me!',
+    title: 'Your Wedding in Mallorca',
+    button1: 'Yes, I do!',
     text1:
       'Mallorca is one of the favorite destination all over the world to celebrate the dreamed wedding. ',
     text2:
@@ -89,8 +89,8 @@ export const homeContent: Translation<HomeContent> = {
     headTitle: 'Bodas y Eventos',
     headDescription:
       'VP ofrece la mejor experiencia para casarse en Mallorca. Disfruta el mejor día de tu vida con VP.',
-    title: 'Bodas en Mallorca',
-    button1: 'Quiero casarme',
+    title: 'Tu Boda en Mallorca',
+    button1: '¡Sí, quiero!',
     text1:
       'Mallorca es uno de los destinos favoritos alrededor del mundo para celebrar la boda soñanda.',
     text2:
