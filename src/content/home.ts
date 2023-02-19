@@ -35,16 +35,19 @@ type HomeContent = {
 export const homeContent: Translation<HomeContent> = {
   en: {
     headTitle: 'Wedding destination Mallorca',
-    headDescription: 'V&P offers the best wedding experiences in Mallorca. Enjoy the best day of your life with V&P.',
+    headDescription:
+      'VP offers the best wedding experiences in Mallorca. Enjoy the best day of your life with VP.',
     title: 'Weddings destination Mallorca',
     button1: 'Marry me!',
-    text1: 'Mallorca is one of the favorite destination all over the world to celebrate the dreamed wedding. ',
-    text2: 'No wonder why… This beautiful island offers you absolutely everything you are looking for.',
+    text1:
+      'Mallorca is one of the favorite destination all over the world to celebrate the dreamed wedding. ',
+    text2:
+      'No wonder why… This beautiful island offers you absolutely everything you are looking for.',
     subtitle1: 'The best service you can have',
     button2: 'A trip for you',
     subtitle2: 'And they all lived happily ever after',
     button3: 'Come to Mallorca',
-    subtitle3: 'V&P Experience',
+    subtitle3: 'VP Experience',
     button4: 'More info',
     carouselLabel1: 'Your dream day',
     carouselLabel2: 'Mallorca island',
@@ -60,7 +63,8 @@ export const homeContent: Translation<HomeContent> = {
     imageCar5: 'https://i.imgur.com/D7L71zA.jpg',
     imageCar6: 'https://i.imgur.com/zh1zUjg.jpg',
     imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
-    video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
+    video1:
+      'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
     video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
     // paragraph: `
     //   Holiiiiiiii novia Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum praesentium maxime quos
@@ -83,16 +87,19 @@ export const homeContent: Translation<HomeContent> = {
   },
   es: {
     headTitle: 'Bodas y Eventos',
-    headDescription: 'V&P ofrece la mejor experiencia para casarse en Mallorca. Disfruta el mejor día de tu vida con V&P.',
+    headDescription:
+      'VP ofrece la mejor experiencia para casarse en Mallorca. Disfruta el mejor día de tu vida con VP.',
     title: 'Bodas en Mallorca',
     button1: 'Quiero casarme',
-    text1: 'Mallorca es uno de los destinos favoritos alrededor del mundo para celebrar la boda soñanda.',
-    text2: 'Sin lugar a dudas esta bonita isla ofrece absolutamente todo lo que estáis buscando.',
+    text1:
+      'Mallorca es uno de los destinos favoritos alrededor del mundo para celebrar la boda soñanda.',
+    text2:
+      'Sin lugar a dudas esta bonita isla ofrece absolutamente todo lo que estáis buscando.',
     subtitle1: 'El mejor servicio que puedas imaginar',
     button2: 'Un viaje para vosotros',
     subtitle2: 'Y vivieron felices para siempre',
     button3: 'Ven a Mallorca',
-    subtitle3: 'Experiencia V&P',
+    subtitle3: 'Experiencia VP',
     button4: 'Saber más',
     carouselLabel1: 'Tu día soñado',
     carouselLabel2: 'Jonathan Borba',
@@ -108,10 +115,11 @@ export const homeContent: Translation<HomeContent> = {
     imageCar5: 'https://i.imgur.com/D7L71zA.jpg',
     imageCar6: 'https://i.imgur.com/zh1zUjg.jpg',
     imageCar7: 'https://i.imgur.com/Aqp26iT.jpg',
-    video1: 'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
+    video1:
+      'https://storage.googleapis.com/valls-media/vp-web/vista-mallorca-cala-1.mp4',
     video2: 'https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4',
     //     paragraph: `
-    //       V&P es la empresa especializada en la organización de bodas de destino en Mallorca. Organizar una boda desde el extranjero puede ser toda una odisea, por lo que nosotros nos encargamos de que esa odisea se convierta en un camino de rosas que os conduzca al día más bonito de vuestra vida.
+    //       VP es la empresa especializada en la organización de bodas de destino en Mallorca. Organizar una boda desde el extranjero puede ser toda una odisea, por lo que nosotros nos encargamos de que esa odisea se convierta en un camino de rosas que os conduzca al día más bonito de vuestra vida.
     //       Desde la elección del lugar perfecto, el catering, decoración, música, alojamiento, transporte, entretenimiento y mucho más!
     //       Nuestra prioridad es ofrecer un trato atento y personalizado para que todo el proceso se convierta en la gran aventura de vuestra vida.
     //       Mallorca es uno de los destinos preferidos alrededor del mundo para celebrar la boda soñada.

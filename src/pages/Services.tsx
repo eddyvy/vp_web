@@ -16,17 +16,17 @@ export const Services: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${content.headTitle}`}</title>
+        <title>{`VP | ${content.headTitle}`}</title>
         <meta content={content.headDescription} name="description"></meta>
       </Head>
       <div className={styles.servicesTopImgContainer}>
         <h1 className={styles.servicesTitle}>{content.title}</h1>
         <Image
           src={content.image1}
-          alt='Services top image'
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center center'
+          alt="Services top image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center center"
           className={styles.servicesTopImg}
         />
       </div>
@@ -40,10 +40,10 @@ export const Services: FC<PageProps> = (pageProps) => {
           <div className={styles.servicesImgContainer}>
             <Image
               src={content.image2}
-              alt='Services image'
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center center'
+              alt="Services image"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center center"
             />
           </div>
         </div>
@@ -54,7 +54,7 @@ export const Services: FC<PageProps> = (pageProps) => {
                 color: '#f5f8fa',
                 fontWeight: 550,
               }}
-              variant='contained'
+              variant="contained"
             >
               {content.button}
             </Button>

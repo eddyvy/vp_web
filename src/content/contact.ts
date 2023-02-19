@@ -14,7 +14,8 @@ type ContactContent = {
 export const contactContent: Translation<ContactContent> = {
   en: {
     headTitle: 'Contact',
-    headDescription: 'You can contact V&P for any doubt or suggestion about our services.',
+    headDescription:
+      'You can contact VP for any doubt or suggestion about our services.',
     title: 'Contact us',
     name: 'Your name',
     email: 'Your email address',
@@ -24,7 +25,8 @@ export const contactContent: Translation<ContactContent> = {
   },
   es: {
     headTitle: 'Contacto',
-    headDescription: 'Puede contactar con V&P para cualquier duda o sugerencia sobre sus servicios',
+    headDescription:
+      'Puede contactar con VP para cualquier duda o sugerencia sobre sus servicios',
     title: 'Contacto',
     name: 'Tu nombre',
     email: 'Tu dirección de email',

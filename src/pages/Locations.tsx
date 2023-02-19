@@ -16,17 +16,17 @@ export const Locations: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${content.headTitle}`}</title>
+        <title>{`VP | ${content.headTitle}`}</title>
         <meta content={content.headDescription} name="description"></meta>
       </Head>
       <div className={styles.locationsTopImgContainer}>
         <h1 className={styles.locationsTitle}>{content.title}</h1>
         <Image
           src={content.image1}
-          alt='Locations top image'
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center center'
+          alt="Locations top image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center center"
           className={styles.locationsTopImg}
         />
       </div>
@@ -42,10 +42,10 @@ export const Locations: FC<PageProps> = (pageProps) => {
           <div className={styles.locationsImgContainer}>
             <Image
               src={content.image2}
-              alt='Locations image'
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center center'
+              alt="Locations image"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center center"
             />
           </div>
         </div>
@@ -62,7 +62,7 @@ export const Locations: FC<PageProps> = (pageProps) => {
                 color: '#f5f8fa',
                 fontWeight: 550,
               }}
-              variant='contained'
+              variant="contained"
             >
               {content.button}
             </Button>

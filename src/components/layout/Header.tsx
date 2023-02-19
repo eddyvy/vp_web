@@ -47,7 +47,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
                   <a>
                     <Image
                       src="/logo/vp-logo.png"
-                      alt="V&P Logo"
+                      alt="VP Logo"
                       layout="fill"
                     />
                   </a>
@@ -70,7 +70,7 @@ export const Header: FC<PageProps> = ({ lang, route }) => {
           className={styles.headerImageContainerMobile}
           onClick={toggleNavbar}
         >
-          <Image src="/logo/vp-logo.png" alt="V&P Logo" layout="fill" />
+          <Image src="/logo/vp-logo.png" alt="VP Logo" layout="fill" />
         </motion.div>
         <div className={styles.headerLangSelectorMobile}>
           <LanguageSelector

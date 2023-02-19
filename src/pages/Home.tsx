@@ -47,20 +47,12 @@ export const Home: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${content.headTitle}`}</title>
+        <title>{`VP | ${content.headTitle}`}</title>
         <meta content={content.headDescription} name="description"></meta>
       </Head>
       <div className={styles.homeVideoContainer}>
-        <video
-          className={styles.homeVideo}
-          loop
-          autoPlay
-          muted
-        >
-          <source
-            src={content.video1}
-            type='video/mp4'
-          />
+        <video className={styles.homeVideo} loop autoPlay muted>
+          <source src={content.video1} type="video/mp4" />
         </video>
         <h1 className={styles.homeTitle}>{content.title}</h1>
         <Link href={allRoutes.CONTACT.path[lang]}>
@@ -74,7 +66,7 @@ export const Home: FC<PageProps> = (pageProps) => {
                 position: 'absolute',
                 transform: 'translate(-50%, -50%)',
               }}
-              variant='contained'
+              variant="contained"
             >
               {content.button1}
             </Button>
@@ -94,7 +86,7 @@ export const Home: FC<PageProps> = (pageProps) => {
                   color: '#f5f8fa',
                   fontWeight: 550,
                 }}
-                variant='contained'
+                variant="contained"
               >
                 {content.button2}
               </Button>
@@ -103,15 +95,10 @@ export const Home: FC<PageProps> = (pageProps) => {
         </div>
       </div>
       <div className={styles.homeVideoContainer}>
-        <video
-          className={styles.homeVideoSecond}
-          loop
-          autoPlay
-          muted
-        >
+        <video className={styles.homeVideoSecond} loop autoPlay muted>
           <source
-            src='https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4'
-            type='video/mp4'
+            src="https://storage.googleapis.com/valls-media/vp-web/proposicion.mp4"
+            type="video/mp4"
           />
         </video>
         <h2 className={styles.homeSubTitle}>{content.subtitle2}</h2>
@@ -126,7 +113,7 @@ export const Home: FC<PageProps> = (pageProps) => {
                 position: 'absolute',
                 transform: 'translate(-50%, -50%)',
               }}
-              variant='contained'
+              variant="contained"
             >
               {content.button3}
             </Button>
@@ -144,7 +131,7 @@ export const Home: FC<PageProps> = (pageProps) => {
                     color: '#f5f8fa',
                     fontWeight: 550,
                   }}
-                  variant='contained'
+                  variant="contained"
                 >
                   {content.button4}
                 </Button>

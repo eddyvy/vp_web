@@ -16,7 +16,7 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
   return (
     <PageLayout {...pageProps}>
       <Head>
-        <title>{`V&P | ${content.headTitle}`}</title>
+        <title>{`VP | ${content.headTitle}`}</title>
         <meta content={content.headDescription} name="description"></meta>
       </Head>
       <h1 className={styles.aboutTitle}>{content.title}</h1>
@@ -43,10 +43,10 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
           <div className={styles.aboutImgContainer}>
             <Image
               src={content.image1}
-              alt='About image'
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center center'
+              alt="About image"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center center"
             />
           </div>
         </div>
@@ -57,7 +57,7 @@ export const AboutUs: FC<PageProps> = (pageProps) => {
                 color: '#f5f8fa',
                 fontWeight: 550,
               }}
-              variant='contained'
+              variant="contained"
             >
               {content.button}
             </Button>
