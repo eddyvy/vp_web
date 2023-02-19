@@ -37,7 +37,7 @@ export const locationsContent: Translation<LocationsContent> = {
     text6:
       'Mallorca has spectacular locations, elegant hotels, lovely rustic venues and much more. Always accompanied by the beautiful weather that characterizes the island.',
     text7:
-      "If you know how is your perfect place to celebrate your big day but you have not found it yet, don't worry, we are here to introduce you to that spot!",
+      'If you know how is your perfect place to celebrate your big day but you have not found it yet, don\'t worry, we are here to introduce you to that spot!',
     text8:
       'We will offer you several possibilities that meet your requirements and desires.',
     text9:

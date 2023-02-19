@@ -21,8 +21,8 @@ export const Contact: FC<PageProps> = (pageProps) => {
     email: '',
     message: '',
   }
-  const [formState, setFormState] = useState<ContactFormState>(initialFormState)
-  const [sent, setSent] = useState<boolean>(false)
+  const [ formState, setFormState ] = useState<ContactFormState>(initialFormState)
+  const [ sent, setSent ] = useState<boolean>(false)
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     const inputName = e.target.name
