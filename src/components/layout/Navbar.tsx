@@ -14,9 +14,7 @@ export const Navbar: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.navbarButton}>
         <Button variant="text" size="large">
           <Link href={allRoutes.HOME.path[lang]}>
-            <a className={
-              `${route === 'HOME' && styles.navbarButtonSelected}`
-            }>
+            <a className={`${route === 'HOME' && styles.navbarButtonSelected}`}>
               {content.home}
             </a>
           </Link>
@@ -25,9 +23,11 @@ export const Navbar: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.navbarButton}>
         <Button variant="text" size="large">
           <Link href={allRoutes.SERVICES.path[lang]}>
-            <a className={
-              `${route === 'SERVICES' && styles.navbarButtonSelected}`
-            }>
+            <a
+              className={`${
+                route === 'SERVICES' && styles.navbarButtonSelected
+              }`}
+            >
               {content.services}
             </a>
           </Link>
@@ -36,9 +36,11 @@ export const Navbar: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.navbarButton}>
         <Button variant="text" size="large">
           <Link href={allRoutes.LOCATIONS.path[lang]}>
-            <a className={
-              `${route === 'LOCATIONS' && styles.navbarButtonSelected}`
-            }>
+            <a
+              className={`${
+                route === 'LOCATIONS' && styles.navbarButtonSelected
+              }`}
+            >
               {content.locations}
             </a>
           </Link>
@@ -47,9 +49,9 @@ export const Navbar: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.navbarButton}>
         <Button variant="text" size="large">
           <Link href={allRoutes.ABOUT.path[lang]}>
-            <a className={
-              `${route === 'ABOUT' && styles.navbarButtonSelected}`
-            }>
+            <a
+              className={`${route === 'ABOUT' && styles.navbarButtonSelected}`}
+            >
               {content.about}
             </a>
           </Link>
@@ -58,9 +60,11 @@ export const Navbar: FC<PageProps> = ({ lang, route }) => {
       <div className={styles.navbarButton}>
         <Button variant="text" size="large">
           <Link href={allRoutes.CONTACT.path[lang]}>
-            <a className={
-              `${route === 'CONTACT' && styles.navbarButtonSelected}`
-            }>
+            <a
+              className={`${
+                route === 'CONTACT' && styles.navbarButtonSelected
+              }`}
+            >
               {content.contact}
             </a>
           </Link>

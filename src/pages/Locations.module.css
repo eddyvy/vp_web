@@ -16,6 +16,7 @@
   z-index: 5;
   text-shadow: 0 0 10px #101010;
   filter: drop-shadow(0 0 0.5rem #f2bf08);
+  padding-top: 1rem;
 }
 
 /* .locationsTopImg {

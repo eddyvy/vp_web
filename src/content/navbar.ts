@@ -13,7 +13,7 @@ export const navbarContent: Translation<NavbarContent> = {
     home: 'Inicio',
     services: 'Servicios',
     locations: 'Lugares',
-    about: 'Sobre Nosotros',
+    about: 'Nosotros',
     contact: 'Contacto',
   },
   en: {

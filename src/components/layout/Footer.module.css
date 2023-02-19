@@ -16,8 +16,9 @@
 
 .footerImageContainer {
   position: relative;
-  width: 11rem;
-  height: 10rem;
+  width: 6.5rem;
+  height: 7rem;
+  margin-top: 1rem;
   margin-right: 1rem;
 }
 
