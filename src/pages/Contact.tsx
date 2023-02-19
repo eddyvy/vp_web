@@ -21,8 +21,8 @@ export const Contact: FC<PageProps> = (pageProps) => {
     email: '',
     message: '',
   }
-  const [ formState, setFormState ] = useState<ContactFormState>(initialFormState)
-  const [ sent, setSent ] = useState<boolean>(false)
+  const [formState, setFormState] = useState<ContactFormState>(initialFormState)
+  const [sent, setSent] = useState<boolean>(false)
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     const inputName = e.target.name
@@ -59,7 +59,7 @@ export const Contact: FC<PageProps> = (pageProps) => {
       <div className={styles.contactContainer}>
         <h1 className={styles.contactTitle}>{content.title}</h1>
         <form
-          action="https://formsubmit.co/968e0e2a14aa6f2be5a91cd44b09774e"
+          action="https://formsubmit.co/a30749f33496a6bb14c1750cf9b5591e"
           method="POST"
           target="_blank"
           onSubmit={handleSubmit}
